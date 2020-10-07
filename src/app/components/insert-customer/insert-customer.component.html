@@ -1,0 +1,9 @@
+<form [formGroup]="customerForm" (ngSubmit)="insertToQueue()">
+    <div>
+    Name: <input formControlName="name" required  placeholder="Enter Name">
+</div>
+<div>
+    <button type="submit">Insert to queue</button> 
+</div>
+  </form> 
+  <div class="warning" *ngIf=" submitted && customerForm.controls.name.errors">Name is required</div>

@@ -1,0 +1,14 @@
+<div><h3>Waiting list</h3> <div>
+
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>QueueNumber</th>
+            <th>CheckInTime</th>
+          </tr>
+          <tr  *ngFor="let currentCustomer of waitingList">
+            <th>{{currentCustomer?.Name}}</th>
+            <th>{{currentCustomer?.QueueNumber}}</th>
+            <th>{{currentCustomer?.CheckInTime | date:'shortTime'}}</th>
+          </tr>
+    </table>

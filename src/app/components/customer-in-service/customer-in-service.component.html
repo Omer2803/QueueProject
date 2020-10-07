@@ -1,0 +1,14 @@
+<div> <button (click)="callNext()">Call next</button> </div>
+<div><h3>In Service</h3> <div>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>QueueNumber</th>
+            <th>CheckInTime</th>
+          </tr>
+          <tr>
+            <th>{{currentCustomer?.Name}}</th>
+            <th>{{currentCustomer?.QueueNumber}}</th>
+            <th>{{currentCustomer?.CheckInTime | date:'shortTime'}}</th>
+          </tr>
+    </table>
