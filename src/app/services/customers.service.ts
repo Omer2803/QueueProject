@@ -8,7 +8,7 @@ import { Customer } from '../models/customer';
 })
 export class CustomersService {
 
-  readonly baseUrl: string = 'https://localhost:44395/Customers/';
+  readonly baseUrl: string = 'https://localhost:44341/Customers/';
 
   constructor(private http: HttpClient) { }
 
